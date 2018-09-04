@@ -12,8 +12,9 @@ public class CameraController : MonoBehaviour {
     public float smoothSpeed = 0.125f;
     public Vector3 offset;
 	
-	void LateUpdate () {
-        transform.Translate(50 * new Vector3(-1,0,-1) * Time.deltaTime);
+	void LateUpdate ()
+    {
+        transform.Translate(50 * new Vector3(transform.position.x,transform.position.y,1) * Time.deltaTime);
 
     }
 }

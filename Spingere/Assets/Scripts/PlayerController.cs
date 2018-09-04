@@ -10,18 +10,7 @@ public class PlayerController : MonoBehaviour {
     public Slider mainSlider;
     [SerializeField]
     public Slider otherSlider;
-    // Use this for initialization
-    void Start () {
-        rigidMain = GetComponent<Rigidbody>();
-
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        
-        
-		
-	}
+    
 
 
     private void FixedUpdate()
@@ -37,11 +26,5 @@ public class PlayerController : MonoBehaviour {
 
 
 
-    public void OnSliderChanger(float SteeringValue)
-    {
-      
-       // transform.position = new Vector3(SteeringValue, transform.position.y, transform.position.z);
-       
-
-    }
+    
 }

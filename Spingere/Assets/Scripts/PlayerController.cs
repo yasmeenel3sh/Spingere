@@ -26,11 +26,11 @@ public class PlayerController : MonoBehaviour {
     {
         transform.Translate(50 * Vector3.forward * Time.deltaTime);
 
-        if (!inBattle)
-        { 
+        //if (!inBattle)
+        //{ 
         Vector3 movingPosition = new Vector3(mainSlider.value, 0, 0);
         transform.Translate(movingPosition * Time.deltaTime * 4);
-        }
+        //}
 
 
 
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour {
         if(collision.rigidbody == rigidOther)
         {
             inBattle = true;
-            mainSlider.enabled = false;
+            //mainSlider.enabled = false;
             Handheld.Vibrate();
             
         }
